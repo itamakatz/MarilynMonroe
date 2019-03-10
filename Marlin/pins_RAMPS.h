@@ -153,7 +153,7 @@
    * Software serial
    */
 
-  #define X_SERIAL_TX_PIN    59
+  // #define X_SERIAL_TX_PIN    59
   #define X_SERIAL_RX_PIN    63
   #define X2_SERIAL_TX_PIN   -1
   #define X2_SERIAL_RX_PIN   -1
@@ -219,7 +219,8 @@
   #define MOSFET_D_PIN  -1
 #endif
 #ifndef RAMPS_D8_PIN
-  #define RAMPS_D8_PIN   8
+  // #define RAMPS_D8_PIN   8
+  #define RAMPS_D8_PIN   59
 #endif
 #ifndef RAMPS_D9_PIN
   #define RAMPS_D9_PIN   9
