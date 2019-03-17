@@ -630,7 +630,7 @@
 // #define DEFAULT_MAX_FEEDRATE          {50, 500, 3, 400}
 // #define DEFAULT_MAX_FEEDRATE          {15, 500, 3, 400}
 // #define DEFAULT_MAX_FEEDRATE          {25, 500, 3, 400}
-#define DEFAULT_MAX_FEEDRATE          {125, 500, 3, 400}
+#define DEFAULT_MAX_FEEDRATE          {125, 500, 2.5, 400}
 
 /**
  * Default Max Acceleration (change/s) change = mm/s
@@ -644,7 +644,8 @@
 // #define DEFAULT_MAX_ACCELERATION      {100, 1200, 100, 700}
 // #define DEFAULT_MAX_ACCELERATION      {100, 300, 100, 700}
 // #define DEFAULT_MAX_ACCELERATION      {100, 700, 100, 700}
-#define DEFAULT_MAX_ACCELERATION      {500, 700, 100, 700}
+// #define DEFAULT_MAX_ACCELERATION      {500, 700, 100, 700}
+#define DEFAULT_MAX_ACCELERATION      {500, 700, 70, 700}
 
 /**
  * Default Acceleration (change/s) change = mm/s
