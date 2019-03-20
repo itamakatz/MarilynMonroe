@@ -58,7 +58,8 @@
 #ifdef IS_RAMPS_13
   #define SERVO0_PIN        7 // RAMPS_13 // Will conflict with BTN_EN2 on LCD_I2C_VIKI
 #else
-  #define SERVO0_PIN       11
+  // #define SERVO0_PIN       11 
+  #define SERVO0_PIN       -1 // using it for the bed "on" pin
 #endif
 #define SERVO1_PIN          6
 #define SERVO2_PIN          5
@@ -153,7 +154,8 @@
    * Software serial
    */
 
-  // #define X_SERIAL_TX_PIN    59
+  // #define X_SERIAL_TX_PIN    59 // -> using it as the bed "on" pin
+  #define X_SERIAL_TX_PIN    -1 // 59 // -> using it as the bed "on" pin
   #define X_SERIAL_RX_PIN    63
   #define X2_SERIAL_TX_PIN   -1
   #define X2_SERIAL_RX_PIN   -1
@@ -220,7 +222,7 @@
 #endif
 #ifndef RAMPS_D8_PIN
   // #define RAMPS_D8_PIN   8
-  #define RAMPS_D8_PIN   59
+  #define RAMPS_D8_PIN   11 // 59
 #endif
 #ifndef RAMPS_D9_PIN
   #define RAMPS_D9_PIN   9
@@ -255,7 +257,7 @@
   #endif
 #endif
 
-#ifndef FAN_PIN
+#ifndef FAN_PIN ///////////////////// ITAMAR: SHOULD BE USED TO MOVE THE FAN AND ADD AN EXTRUDER 
   #define FAN_PIN 4      // IO pin. Buffer needed
 #endif
 
@@ -273,7 +275,7 @@
 #define FIL_RUNOUT_PIN      4
 
 #ifndef PS_ON_PIN
-  #define PS_ON_PIN        12
+  #define PS_ON_PIN         12
 #endif
 
 #if ENABLED(CASE_LIGHT_ENABLE) && !PIN_EXISTS(CASE_LIGHT) && !defined(SPINDLE_LASER_ENABLE_PIN)
